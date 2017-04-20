@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imottall/programmeren-4.git"
+    "url": "git+https://github.com/imottall/programmeren.git"
   },
   "keywords": [
     "randomusergenerator"
   ],
   "bugs": {
-    "url": "https://github.com/imottall/programmeren-4/issues"
+    "url": "https://github.com/imottall/programmeren/issues"
   },
-  "homepage": "https://github.com/imottall/programmeren-4#readme"
+  "homepage": "https://github.com/imottall/programmeren#readme"
 }
