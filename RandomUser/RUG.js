@@ -9,7 +9,7 @@ app.get('/about', function(request, response) {
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
-
+ response.json({
  'some_name': 'Value',
  'an_array_of_objects': [
  {
