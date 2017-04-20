@@ -1,0 +1,26 @@
+{
+  "name": "randomusergenerator",
+  "version": "1.0.0",
+  "description": "Random User Generator REST API in Node.js",
+  "main": "./<C:\Users\TB\Documents\School\Avans\programmeren\Practica\RandomUser>/<RUG.js>",
+   "scripts": {
+   "start": "node ./<C:\Users\TB\Documents\School\Avans\programmeren\Practica\RandomUser>/<RUG.js>"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TB",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imottall/programmeren.git"
+  },
+  "keywords": [
+    "randomusergenerator"
+  ],
+  "bugs": {
+    "url": "https://github.com/imottall/programmeren/issues"
+  },
+  "homepage": "https://github.com/imottall/programmeren#readme"
+}
