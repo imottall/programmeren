@@ -1,1 +1,1 @@
-web: node ./<jouw subdirectory>/<jouw Javascript file>
+web: node ./RandomUser/RUG.js
