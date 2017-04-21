@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
+var rand = 9
+    //Math.floor((Math.random() * 10) + 1);
 
 app.get('/', function(request, response) {
  response.send('Hello Avans!');
@@ -9,24 +11,64 @@ app.get('/about', function(request, response) {
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
- response.json({
- 'some_name': 'Value',
- 'an_array_of_objects': [
- {
- 'another_name': 'Another value',
- 'a_further_name': "A further value"
- },
- {'yet_another_name': 'Yet another value'}
- ],
- 'some_boolean': true,
- 'some_integer': 42,
- 'array_of_ints': [
- 2, 3, 5, 7, 11, 13
- ],
- 'array_of_strings': [
- "twee", "drie", "vijf", "zeven"
- ]
- })
+	switch (rand) {
+    case 0:
+        response.json({
+        	"name":"Johan"
+ 		})
+        break;
+    case 1:
+        response.json({
+			"name":"Yoyo"
+ 		})
+        break;
+    case 2:
+        response.json({
+			"name":"Weeeee"
+ 		})
+        break;
+    case 3:
+        response.json({
+			"name":"Killua"
+ 		})
+        break;
+    case 4:
+        response.json({
+			"name":"Gon"
+ 		})
+        break;
+    case 5:
+        response.json({
+			"name":"Hisoka"
+ 		})
+        break;
+    case 6:
+        response.json({
+			"name":"Dude"
+ 		})
+ 		break;
+    case 7:
+        response.json({
+			"name":"Faka"
+ 		})
+   		break;
+    case 8:
+        response.json({
+			"name":"Morono"
+ 		})
+        break;
+   	case 9:
+        response.json({
+			"name":"Cheese"
+ 		})
+   	    break;
+   	case 10:
+        response.json({
+			"name":"Chiiezzz"
+ 		})
+   	    break;
+}
+ 
 })
 app.all('*', function(request, response) {
  response.status(404);
