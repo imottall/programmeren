@@ -1,8 +1,7 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
-var rand = 9
-    //Math.floor((Math.random() * 10) + 1);
+var rand = Math.floor((Math.random() * 10) + 1);
 
 app.get('/', function(request, response) {
  response.send('Hello Avans!');
