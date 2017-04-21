@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
 var rand = Math.floor((Math.random() * 10) + 1);
+var forced = 9
 
 app.get('/', function(request, response) {
  response.send('Hello Avans!');
@@ -10,7 +11,7 @@ app.get('/about', function(request, response) {
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
-	switch (rand) {
+	switch (forced) {
     case 0:
         response.json({
         	"name":"Johan"
@@ -53,7 +54,8 @@ app.get('/json', function(request, response) {
    		break;
     case 8:
         response.json({
-			"name":"Morono"
+			"name":"Morono",
+			"var":var
  		})
         break;
    	case 9:
