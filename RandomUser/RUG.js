@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
 var rand = Math.floor((Math.random() * 10) + 1);
-var forced = 9
+var forced = 8;
 
 app.get('/', function(request, response) {
  response.send('Hello Avans!');
