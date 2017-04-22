@@ -61,7 +61,7 @@ app.get('/json', function(request, response) {
  		})
         break;
     }
-})
+}
 app.all('*', function(request, response) {
  response.status(404);
  response.send('404 -Not found');
