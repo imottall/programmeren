@@ -46,17 +46,43 @@ app.get('/json', function(request, response) {
         break;
     case 2:
         response.json({
-			"name":"Weeeee"
+			"results":[{"gender":"female","name":{
+				"title":"ms","first":"galaza","last":"araújo"},"location":{
+					"street":"2460 rua onze ","city":"hortolândia","state":"bahia","postcode":14838},
+				    "email":"galaza.araújo@example.com","login":{
+					    "username":"organictiger153","password":"hanson","salt":"lpLzT8vc",
+					    "md5":"1c611e7534557f20e2193eb58699fb24","sha1":"e42f09f3f523a5892890c3b980f3caaa9e9e6b81",
+					    "sha256":"bc0e5df6e3f4486f68a341c22712505100ab0e331599385fce9077751016e714"},
+				    "dob":"1978-10-14 04:00:47",
+				    "registered":"2004-02-06 02:28:43","phone":"(85) 9185-7842","cell":"(83) 9590-0595",
+				    "id":{"name":"","value":null}
+				   }]
  		})
         break;
     case 3:
         response.json({
-			"name":"Killua"
+			"results":[{"gender":"female","name":{"title":"ms","first":"andrea","last":"duran"},"location":
+				    {"street":"8584 calle de arturo soria","city":"cuenca","state":"aragón","postcode":36620}
+				    ,"email":"andrea.duran@example.com","login":
+				    {"username":"brownelephant778","password":"forget","salt":"2Og9CnUW",
+				     "md5":"5255f50ec2e630a30e6c4fb1708edbc3","sha1":"fd275efa3adfbd8f2872d1f1c9743bd7aac78afa",
+				     "sha256":"69ea13168431396f9769fafd0b940839692ee515c5f9bb827e211efdd1ac7539"},
+				    "dob":"1949-03-01 21:21:36","registered":"2005-10-30 22:30:42","phone":"922-170-567",
+				    "cell":"608-007-007","id":{"name":"DNI","value":"66738959-L"}
+				   }]
  		})
         break;
     case 4:
         response.json({
-			"name":"Gon"
+			"results":[{"gender":"female","name":{"title":"mrs","first":"lorraine","last":"peck"},
+				    "location":{"street":"6160 fincher rd","city":"corona","state":"california","postcode":29558},
+				    "email":"lorraine.peck@example.com","login":{
+					    "username":"redpeacock297","password":"bubbas","salt":"J9f9ioWG",
+					    "md5":"06f44a05f84cdd9a5a7a59e2b514ceb2","sha1":"dfe5746218cc4d6d9c28517d7e37d4ac5e0097f3",
+					    "sha256":"0131e51bfb31183bb1a34580d9966f1a7ee23f8e7a1d757d78746e05d7444e79"},
+				    "dob":"1969-12-09 07:12:37","registered":"2008-09-12 05:00:04","phone":"(373)-379-3101",
+				    "cell":"(433)-854-5527","id":{"name":"SSN","value":"902-26-3191"}
+				   }]
  		})
         break;
 }
