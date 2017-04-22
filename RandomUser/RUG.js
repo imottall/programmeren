@@ -10,7 +10,7 @@ app.get('/about', function(request, response) {
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
-	var rand = Math.floor((Math.random() * 10) + 1);
+	var rand = Math.floor((Math.random() * 5) + 1);
 	switch (rand) {
     case 0:
         response.json({
@@ -42,33 +42,7 @@ app.get('/json', function(request, response) {
 			"name":"Hisoka"
  		})
         break;
-    case 6:
-        response.json({
-			"name":"Dude"
- 		})
- 		break;
-    case 7:
-        response.json({
-			"name":"Faka"
- 		})
-   		break;
-    case 8:
-        response.json({
-			"name":"Morono"
- 		})
-        	break;
-   case 9:
-        response.json({
-			"name":"Cheese"
- 		})
-   	    break;
-   case 10:
-        response.json({
-			"name":"Chiiezzz"
- 		})
-   	    break;
-}
- 
+	}
 })
 app.all('*', function(request, response) {
  response.status(404);
