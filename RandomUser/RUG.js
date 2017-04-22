@@ -59,13 +59,7 @@ app.get('/json', function(request, response) {
 			"name":"Gon"
  		})
         break;
-    case 5:
-        response.json({
-			"name":"Hisoka"
- 		})
-        break;
 }
- 
 })
 app.all('*', function(request, response) {
 	Log.d("Rand=","" + rand);
