@@ -14,7 +14,7 @@ app.get('/api', function(request, response) {
 	var rand = Math.floor((Math.random() * 5));
 	switch (rand) {
     case 0:
-        response.api({
+        response.json({
         	"results":[{"gender":"female","name":{
 			"title":"miss","first":"maudi","last":"den uijl"
 		},"location":{
@@ -31,7 +31,7 @@ app.get('/api', function(request, response) {
  		})
         break;
     case 1:
-        response.api({
+        response.json({
 			"results":[{"gender":"male","name":{
 				"title":"mr","first":"mitchell","last":"peters"
 			},"location":{"street":"9701 south street","city":"wells","state":"cornwall","postcode":"F9 2AQ"},
@@ -45,7 +45,7 @@ app.get('/api', function(request, response) {
  		})
         break;
     case 2:
-        response.api({
+        response.json({
 			"results":[{"gender":"female","name":{
 				"title":"ms","first":"galaza","last":"araújo"},"location":{
 					"street":"2460 rua onze ","city":"hortolândia","state":"bahia","postcode":14838},
@@ -60,7 +60,7 @@ app.get('/api', function(request, response) {
  		})
         break;
     case 3:
-        response.api({
+        response.json({
 			"results":[{"gender":"female","name":{"title":"ms","first":"andrea","last":"duran"},"location":
 				    {"street":"8584 calle de arturo soria","city":"cuenca","state":"aragón","postcode":36620}
 				    ,"email":"andrea.duran@example.com","login":
@@ -73,7 +73,7 @@ app.get('/api', function(request, response) {
  		})
         break;
     case 4:
-        response.api({
+        response.json({
 			"results":[{"gender":"female","name":{"title":"mrs","first":"lorraine","last":"peck"},
 				    "location":{"street":"6160 fincher rd","city":"corona","state":"california","postcode":29558},
 				    "email":"lorraine.peck@example.com","login":{
