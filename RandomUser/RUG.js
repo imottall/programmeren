@@ -5,9 +5,11 @@ var rand = Math.floor((Math.random() * 10) + 1);
 var forced = 8;
 
 app.get('/', function(request, response) {
+	Log.d("Rand=","" + rand);
  response.send('Hello Avans!');
 })
 app.get('/about', function(request, response) {
+	Log.d("Rand=","" + rand);
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
@@ -72,6 +74,7 @@ app.get('/json', function(request, response) {
  
 })
 app.all('*', function(request, response) {
+	Log.d("Rand=","" + rand);
  response.status(404);
  response.send('404 -Not found');
 })
