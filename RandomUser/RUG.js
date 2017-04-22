@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
  response.send('Hello Avans!');
 })
 app.get('/about', function(request, response) {
- response.send('Written by <jouw naam hier invullen>');
+ response.send('Written by TB');
 })
 app.get('/json', function(request, response) {
 	//var rand = Math.floor(Math.random() * 2);
@@ -63,7 +63,7 @@ app.get('/json', function(request, response) {
 //  		})
 //         break;
     }
-}
+})
 app.all('*', function(request, response) {
  response.status(404);
  response.send('404 -Not found');
