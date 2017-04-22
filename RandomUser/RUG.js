@@ -1,18 +1,16 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
-var rand = Math.floor((Math.random() * 10) + 1);
 var forced = 8;
 
 app.get('/', function(request, response) {
- response.send('Hello Avans!' + rand);
+ response.send('Hello Avans!');
 })
 app.get('/about', function(request, response) {
-	Log.d("Rand=","" + rand);
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
-	Log.d("Rand=","" + rand);
+	var rand = Math.floor((Math.random() * 10) + 1);
 	switch (rand) {
     case 0:
         response.json({
@@ -73,7 +71,6 @@ app.get('/json', function(request, response) {
  
 })
 app.all('*', function(request, response) {
-	Log.d("Rand=","" + rand);
  response.status(404);
  response.send('404 -Not found');
 })
