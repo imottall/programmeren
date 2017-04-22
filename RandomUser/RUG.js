@@ -10,12 +10,13 @@ app.get('/about', function(request, response) {
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
-	var rand = Math.floor((Math.random() * 5)+1);
+	var rand = Math.floor(Math.random() * 2);
 	switch (rand) {
     case 0:
          response.json({
-        	"results":[{"gender":"male","name":{"title":"mr","first":"alex","last":"mora"},"location":{"street":"3760 avenida de andalucía","city":"torrevieja","state":"país vasco","postcode":67011},"email":"alex.mora@example.com","login":{"username":"purpleostrich792","password":"crazybab","salt":"aXjXgHVc","md5":"7cafbe7bb469829d705c41edf7b64575","sha1":"4ae65d7caf41d6382b1f39013293072cbf82b830","sha256":"1a168cac8d22963cb76f8c6ee51cb065e3f8f79397804d236cb99b7e0fe77f4e"},"dob":"1991-04-09 05:01:49","registered":"2015-07-30 07:02:03","phone":"975-855-465","cell":"639-499-397","id":{"name":"DNI","value":"20615558-W"}
-		}]
+        	"results"
+// 		 :[{"gender":"male","name":{"title":"mr","first":"alex","last":"mora"},"location":{"street":"3760 avenida de andalucía","city":"torrevieja","state":"país vasco","postcode":67011},"email":"alex.mora@example.com","login":{"username":"purpleostrich792","password":"crazybab","salt":"aXjXgHVc","md5":"7cafbe7bb469829d705c41edf7b64575","sha1":"4ae65d7caf41d6382b1f39013293072cbf82b830","sha256":"1a168cac8d22963cb76f8c6ee51cb065e3f8f79397804d236cb99b7e0fe77f4e"},"dob":"1991-04-09 05:01:49","registered":"2015-07-30 07:02:03","phone":"975-855-465","cell":"639-499-397","id":{"name":"DNI","value":"20615558-W"}
+// 		}]
  		})
         break;
     case 1:
@@ -36,30 +37,30 @@ app.get('/json', function(request, response) {
 		}]
  		})
         break;
-    case 2:
-         response.json({
-        	"results":[{"gender":"male","name":{"title":"mr","first":"alex","last":"mora"},"location":{"street":"3760 avenida de andalucía","city":"torrevieja","state":"país vasco","postcode":67011},"email":"alex.mora@example.com","login":{"username":"purpleostrich792","password":"crazybab","salt":"aXjXgHVc","md5":"7cafbe7bb469829d705c41edf7b64575","sha1":"4ae65d7caf41d6382b1f39013293072cbf82b830","sha256":"1a168cac8d22963cb76f8c6ee51cb065e3f8f79397804d236cb99b7e0fe77f4e"},"dob":"1991-04-09 05:01:49","registered":"2015-07-30 07:02:03","phone":"975-855-465","cell":"639-499-397","id":{"name":"DNI","value":"20615558-W"}
-		}]
- 		})
-        break;
-    case 3:
-        response.json({
-			"results":[{"gender":"female","name":{"title":"madame","first":"kelya","last":"roussel"},"location":{"street":"7427 rue de la barre","city":"st-barthélemy vd","state":"genève","postcode":7979},"email":"kelya.roussel@example.com","login":{"username":"greenostrich110","password":"reggie","salt":"5OKjlIe5","md5":"2a52e13e7af94fa9184a2f60b213b9e6","sha1":"58b2a4b36c51e2623151be9d5e168dc72533070f","sha256":"fc38e9068426faa613f56b596473c1622070d5e8ea90dd27f83e900309ff0ffa"},"dob":"1970-01-14 04:03:50","registered":"2014-10-17 07:20:57","phone":"(405)-121-3127","cell":"(744)-780-8448","id":{"name":"AVS","value":"756.MNLF.WUHS.80"}
-				   }]
-				   })
-        break;
-    case 4:
-        response.json({
-			"results":[{"gender":"male","name":{"title":"monsieur","first":"aaron","last":"fleury"},"location":{"street":"2607 rue dugas-montbel","city":"boussens","state":"luzern","postcode":2473},"email":"aaron.fleury@example.com","login":{"username":"whiteleopard140","password":"eminem","salt":"xjK3a3I0","md5":"a675fdc6dfd5f079006ef3e51d881c8e","sha1":"051d2da4e30f4406ec18625047672e2b70f133fc","sha256":"bd22b713106ef229c540ba87e50488143f90a6308f8aab6bb75e84912730a3dc"},"dob":"1979-01-26 15:53:16","registered":"2015-08-17 05:48:00","phone":"(403)-399-4649","cell":"(704)-618-4265","id":{"name":"AVS","value":"756.YPIJ.RKWU.80"}
-		}]
- 		})
-        break;
-     case 5:
-         response.json({
-        	"results":[{"gender":"male","name":{"title":"mr","first":"alex","last":"mora"},"location":{"street":"3760 avenida de andalucía","city":"torrevieja","state":"país vasco","postcode":67011},"email":"alex.mora@example.com","login":{"username":"purpleostrich792","password":"crazybab","salt":"aXjXgHVc","md5":"7cafbe7bb469829d705c41edf7b64575","sha1":"4ae65d7caf41d6382b1f39013293072cbf82b830","sha256":"1a168cac8d22963cb76f8c6ee51cb065e3f8f79397804d236cb99b7e0fe77f4e"},"dob":"1991-04-09 05:01:49","registered":"2015-07-30 07:02:03","phone":"975-855-465","cell":"639-499-397","id":{"name":"DNI","value":"20615558-W"}
-		}]
- 		})
-        break;
+//     case 2:
+//          response.json({
+//         	"results":[{"gender":"male","name":{"title":"mr","first":"alex","last":"mora"},"location":{"street":"3760 avenida de andalucía","city":"torrevieja","state":"país vasco","postcode":67011},"email":"alex.mora@example.com","login":{"username":"purpleostrich792","password":"crazybab","salt":"aXjXgHVc","md5":"7cafbe7bb469829d705c41edf7b64575","sha1":"4ae65d7caf41d6382b1f39013293072cbf82b830","sha256":"1a168cac8d22963cb76f8c6ee51cb065e3f8f79397804d236cb99b7e0fe77f4e"},"dob":"1991-04-09 05:01:49","registered":"2015-07-30 07:02:03","phone":"975-855-465","cell":"639-499-397","id":{"name":"DNI","value":"20615558-W"}
+// 		}]
+//  		})
+//         break;
+//     case 3:
+//         response.json({
+// 			"results":[{"gender":"female","name":{"title":"madame","first":"kelya","last":"roussel"},"location":{"street":"7427 rue de la barre","city":"st-barthélemy vd","state":"genève","postcode":7979},"email":"kelya.roussel@example.com","login":{"username":"greenostrich110","password":"reggie","salt":"5OKjlIe5","md5":"2a52e13e7af94fa9184a2f60b213b9e6","sha1":"58b2a4b36c51e2623151be9d5e168dc72533070f","sha256":"fc38e9068426faa613f56b596473c1622070d5e8ea90dd27f83e900309ff0ffa"},"dob":"1970-01-14 04:03:50","registered":"2014-10-17 07:20:57","phone":"(405)-121-3127","cell":"(744)-780-8448","id":{"name":"AVS","value":"756.MNLF.WUHS.80"}
+// 				   }]
+// 				   })
+//         break;
+//     case 4:
+//         response.json({
+// 			"results":[{"gender":"male","name":{"title":"monsieur","first":"aaron","last":"fleury"},"location":{"street":"2607 rue dugas-montbel","city":"boussens","state":"luzern","postcode":2473},"email":"aaron.fleury@example.com","login":{"username":"whiteleopard140","password":"eminem","salt":"xjK3a3I0","md5":"a675fdc6dfd5f079006ef3e51d881c8e","sha1":"051d2da4e30f4406ec18625047672e2b70f133fc","sha256":"bd22b713106ef229c540ba87e50488143f90a6308f8aab6bb75e84912730a3dc"},"dob":"1979-01-26 15:53:16","registered":"2015-08-17 05:48:00","phone":"(403)-399-4649","cell":"(704)-618-4265","id":{"name":"AVS","value":"756.YPIJ.RKWU.80"}
+// 		}]
+//  		})
+//         break;
+//      case 5:
+//          response.json({
+//         	"results":[{"gender":"male","name":{"title":"mr","first":"alex","last":"mora"},"location":{"street":"3760 avenida de andalucía","city":"torrevieja","state":"país vasco","postcode":67011},"email":"alex.mora@example.com","login":{"username":"purpleostrich792","password":"crazybab","salt":"aXjXgHVc","md5":"7cafbe7bb469829d705c41edf7b64575","sha1":"4ae65d7caf41d6382b1f39013293072cbf82b830","sha256":"1a168cac8d22963cb76f8c6ee51cb065e3f8f79397804d236cb99b7e0fe77f4e"},"dob":"1991-04-09 05:01:49","registered":"2015-07-30 07:02:03","phone":"975-855-465","cell":"639-499-397","id":{"name":"DNI","value":"20615558-W"}
+// 		}]
+//  		})
+//         break;
     }
 }
 app.all('*', function(request, response) {
