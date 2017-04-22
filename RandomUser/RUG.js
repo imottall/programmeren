@@ -21,20 +21,21 @@ app.get('/json', function(request, response) {
         break;
     case 1:
          response.json({
-        	"results":[{
-			"gender":"male","name":{
-				"title":"monsieur","first":"léandre","last":"denis"
-			},
-			"location":{
-				"street":"9290 rue baraban","city":"belmont-sur-lausanne","state":"schwyz","postcode":9026},
-			"email":"léandre.denis@example.com","login":{
-				"username":"beautifulfish209","password":"ccccccc","salt":"c41KGGP5",
-				"md5":"f03846d14ddc2e917635ee17b9e45b07","sha1":"1483beec1e0a1902c13a48018d6da3a944313444",
-				"sha256":"dfde8a39ab2e044ce193ce9103448b0a2f38ab028dc4382fb5952fefc9779ec6"},
-			"dob":"1956-04-27 16:31:00","registered":"2006-01-04 14:05:35","phone":"(179)-386-1003",
-			"cell":"(349)-279-2066","id":{
-				"name":"AVS","value":"756.ZSHN.FIFZ.92"}
-		}]
+        	"results"
+// 		 :[{
+// 			"gender":"male","name":{
+// 				"title":"monsieur","first":"léandre","last":"denis"
+// 			},
+// 			"location":{
+// 				"street":"9290 rue baraban","city":"belmont-sur-lausanne","state":"schwyz","postcode":9026},
+// 			"email":"léandre.denis@example.com","login":{
+// 				"username":"beautifulfish209","password":"ccccccc","salt":"c41KGGP5",
+// 				"md5":"f03846d14ddc2e917635ee17b9e45b07","sha1":"1483beec1e0a1902c13a48018d6da3a944313444",
+// 				"sha256":"dfde8a39ab2e044ce193ce9103448b0a2f38ab028dc4382fb5952fefc9779ec6"},
+// 			"dob":"1956-04-27 16:31:00","registered":"2006-01-04 14:05:35","phone":"(179)-386-1003",
+// 			"cell":"(349)-279-2066","id":{
+// 				"name":"AVS","value":"756.ZSHN.FIFZ.92"}
+// 		}]
  		})
         break;
 //     case 2:
