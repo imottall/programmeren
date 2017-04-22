@@ -5,8 +5,7 @@ var rand = Math.floor((Math.random() * 10) + 1);
 var forced = 8;
 
 app.get('/', function(request, response) {
-	Log.d("Rand=","" + rand);
- response.send('Hello Avans!');
+ response.send('Hello Avans!' + rand);
 })
 app.get('/about', function(request, response) {
 	Log.d("Rand=","" + rand);
