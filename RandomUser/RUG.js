@@ -55,15 +55,15 @@ app.get('/json', function(request, response) {
    		break;
     case 8:
         response.json({
-			"name":"Morono",
+			"name":"Morono"
  		})
-        break;
-   	case 9:
+        	break;
+   case 9:
         response.json({
 			"name":"Cheese"
  		})
    	    break;
-   	case 10:
+   case 10:
         response.json({
 			"name":"Chiiezzz"
  		})
