@@ -32,7 +32,16 @@ app.get('/json', function(request, response) {
         break;
     case 1:
         response.json({
-			"name":"Yoyo"
+			"results":[{"gender":"male","name":{
+				"title":"mr","first":"mitchell","last":"peters"
+			},"location":{"street":"9701 south street","city":"wells","state":"cornwall","postcode":"F9 2AQ"},
+				    "email":"mitchell.peters@example.com","login":
+				    {"username":"silvermouse747","password":"housewife","salt":"hSZ0LufX",
+				     "md5":"ac17a6162b0a91cb57f6537bb448843d","sha1":"a633dc05349061c25a5ef79e6fa482432ba257b2",
+				     "sha256":"fb2a5a94117f82f5d2fed624128f4b8c57bab3c66f9623762671abe9b52bccd6"},
+				    "dob":"1967-06-01 15:45:17","registered":"2007-01-16 18:37:15","phone":"0116112 457 4251",
+				    "cell":"0700-315-608","id":{"name":"NINO","value":"HL 20 11 73 U"}
+				   }]
  		})
         break;
     case 2:
