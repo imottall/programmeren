@@ -13,9 +13,9 @@ app.get('/json', function(request, response) {
 	var rand = Math.floor((Math.random() * 5));
 	switch (rand) {
     case 0:
-        response.json({
-        	"results":[{"gender":"female","name":{"title":"miss","first":"maudi","last":"den uijl"},"location":{"street":"4550 jan pieterszoon coenstraat","city":"goeree-overflakkee","state":"drenthe","postcode":86022},"email":"maudi.denuijl@example.com","login":{"username":"yellowlion527","password":"smiles","salt":"AO8BJpVl","md5":"cf9ca42a3a9587d57993f1fb841758aa","sha1":"afda1fa59faabd6bacb17b1b17d8d647248a6c5c","sha256":"7de7222ee899f15874a1215940cf362079924c3e7154db4f904fb11a1c521312"},"dob":"1971-10-14 13:42:00","registered":"2015-03-17 08:33:02","phone":"(165)-662-2133","cell":"(481)-371-1537","id":{"name":"BSN","value":"20571705"}
-				   }]
+         response.json({
+        	"results":[{"gender":"male","name":{"title":"mr","first":"alex","last":"mora"},"location":{"street":"3760 avenida de andalucía","city":"torrevieja","state":"país vasco","postcode":67011},"email":"alex.mora@example.com","login":{"username":"purpleostrich792","password":"crazybab","salt":"aXjXgHVc","md5":"7cafbe7bb469829d705c41edf7b64575","sha1":"4ae65d7caf41d6382b1f39013293072cbf82b830","sha256":"1a168cac8d22963cb76f8c6ee51cb065e3f8f79397804d236cb99b7e0fe77f4e"},"dob":"1991-04-09 05:01:49","registered":"2015-07-30 07:02:03","phone":"975-855-465","cell":"639-499-397","id":{"name":"DNI","value":"20615558-W"}
+		}]
  		})
         break;
     case 1:
