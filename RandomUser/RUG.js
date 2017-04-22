@@ -11,6 +11,7 @@ app.get('/about', function(request, response) {
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
+	Log.d("Rand=","" + rand);
 	switch (forced) {
     case 0:
         response.json({
@@ -55,7 +56,6 @@ app.get('/json', function(request, response) {
     case 8:
         response.json({
 			"name":"Morono",
-			"var":var
  		})
         break;
    	case 9:
