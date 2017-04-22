@@ -10,8 +10,8 @@ app.get('/about', function(request, response) {
  response.send('Written by <jouw naam hier invullen>');
 })
 app.get('/json', function(request, response) {
-	var rand = Math.floor(Math.random() * 2);
-	switch (rand) {
+	//var rand = Math.floor(Math.random() * 2);
+	switch (1) {
     case 0:
          response.json({
         	"results"
