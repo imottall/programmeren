@@ -13,7 +13,7 @@ app.get('/about', function(request, response) {
 })
 app.get('/json', function(request, response) {
 	Log.d("Rand=","" + rand);
-	switch (forced) {
+	switch (rand) {
     case 0:
         response.json({
         	"name":"Johan"
